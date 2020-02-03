@@ -1,4 +1,6 @@
-var socket = require('socket.io-client')('http://localhost:3000');
+var socket = require('socket.io-client')(
+  'https://murmuring-mountain-14505.herokuapp.com'
+);
 var gpio = require('rpi-gpio');
 
 process.on('SIGINT', function() {
